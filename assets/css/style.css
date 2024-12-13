@@ -21,6 +21,8 @@ body,
 .user-img {
     position: absolute;
     right: -5px;
+    bottom: -10px;
+    z-index: -1;
 }
 
 li.nav-item {
@@ -53,7 +55,7 @@ h1 {
     white-space: nowrap;
     overflow: hidden;
     animation: blink-caret 0.8s steps(1) infinite;
-    font-size: 75px;
+    font-size: 60px;
 }
 
 @keyframes blink-caret {
@@ -76,4 +78,7 @@ h1 {
 .social-media img {
     width: 40px;
     height: auto;
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
 }
