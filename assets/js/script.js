@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-    const words = ["Angular", "Python", "AI"];
+    const words = ["a software developer", "visionary entrepreneur", "leader"];
     const typingWord = document.querySelector('.typing-word');
     let wordIndex = 0;
     let charIndex = 0;
@@ -29,3 +29,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start the typing animation
     typeAnimation();
 });
+var dropdownid = '';
+function toggleDropdown(id) {
+    dropdownid = id;
+    const dropdown = document.getElementById(dropdownid);
+
+    // Close other open dropdowns
+    document.querySelectorAll('.dropdown.open').forEach((openDropdown) => {
+        if (openDropdown !== dropdown) {
+            openDropdown.classList.remove('open');
+        }
+    });
+
+    // Toggle the current dropdown
+    dropdown.classList.toggle('open');
+}
