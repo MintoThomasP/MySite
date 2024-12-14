@@ -240,6 +240,27 @@ a.my-navbar-toggler {
     margin-right: 20px;
 }
 
+.experience img {
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.experience img:hover {
+    filter: grayscale(0%);
+}
+
+.logo-row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.logo-row .logo-img {
+    padding: 20px;
+    width: 25%;
+    text-align: center;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     img.user-img {
@@ -248,6 +269,15 @@ a.my-navbar-toggler {
 
     .banner .text-area {
         width: fit-content;
+    }
+
+    .experience {
+        position: absolute;
+        top: 200px;
+    }
+
+    .logo-row .logo-img {
+        padding: 0px;
     }
 }
 
