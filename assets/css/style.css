@@ -21,6 +21,7 @@ div#collapsibleNavbar {
 
 .banner {
     position: relative;
+    height: 80vh;
 }
 
 .banner-cover {
@@ -34,7 +35,7 @@ div#collapsibleNavbar {
 
 .banner .text-area {
     background: #ffffff5e;
-    width: fit-content;
+    width: 60%;
 }
 
 .user-img {
@@ -211,10 +212,30 @@ a.my-navbar-toggler {
     margin: 0;
 }
 
+.content-block {
+    margin-top: 35px;
+}
+
+.about {
+    text-align: center;
+}
+
+.about .table th {
+    text-align: right;
+}
+
+.about .table td {
+    text-align: left;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     img.user-img {
         width: 100%;
+    }
+
+    .banner .text-area {
+        width: fit-content;
     }
 }
 
