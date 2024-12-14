@@ -261,6 +261,43 @@ a.my-navbar-toggler {
     text-align: center;
 }
 
+.industry-exp h2 {
+    font-size: 17px;
+}
+
+.industry-exp .card-header .heading h3 {
+    font-size: 12px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.industry-exp .card-header .heading {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.industry-accordion .card {
+    margin-bottom: 30px;
+}
+
+.industry-exp .collapse:not(.show) {
+    display: unset;
+}
+
+.industry-exp .card-header .heading img {
+    width: 200px;
+    filter: grayscale(100%);
+}
+
+.industry-accordion p {
+    margin: 0;
+}
+
+.industry-accordion p i {
+    font-size: 13px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     img.user-img {
