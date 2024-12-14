@@ -228,6 +228,18 @@ a.my-navbar-toggler {
     text-align: left;
 }
 
+.about .point-block {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #cacaca;
+    margin: 10px 10px;
+}
+
+.about .point-block img {
+    width: 30px;
+    margin-right: 20px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     img.user-img {
