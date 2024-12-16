@@ -6,6 +6,26 @@ body,
 
 nav {
     z-index: 9999;
+    /* background: linear-gradient(to bottom, white, #bcbcbc); */
+}
+
+.my-navbar::after,
+.my-navbar::before {
+    content: "";
+    /* background: linear-gradient(to bottom, #bcbcbc, black); */
+    width: 50%;
+    position: absolute;
+    height: 40px;
+}
+
+.my-navbar::after {
+    border-bottom-right-radius: 50%;
+    right: 0;
+}
+
+.my-navbar::before {
+    border-bottom-left-radius: 50%;
+    left: 0;
 }
 
 div#collapsibleNavbar {
@@ -220,11 +240,15 @@ a.my-navbar-toggler {
     text-align: center;
 }
 
-.about .table th {
+.about-table {
+    margin: 40px 30px;
+}
+
+.about-table th {
     text-align: right;
 }
 
-.about .table td {
+.about-table td {
     text-align: left;
 }
 
@@ -298,6 +322,66 @@ a.my-navbar-toggler {
     font-size: 13px;
 }
 
+.text-area .form-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    border-radius: 50px;
+    padding: 5px 25px;
+    background-color: gray;
+    border: none;
+}
+
+.btn-primary:focus-visible,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: rgb(57, 57, 57) !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.contact-page img {
+    filter: grayscale(100%);
+}
+
+.hire-me {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.hire-content,
+.hire-form {
+    width: 50%;
+}
+
+.hire-form input.form-control {
+    height: 60px;
+}
+
+.footer {
+    background: black;
+    color: white;
+    padding: 50px 0;
+}
+
+.hire-form .input-group-text {
+    background-color: rgb(57, 57, 57) !important;
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    background-color: rgb(39, 39, 39);
+    color: #6b6b6b;
+    font-size: 13px;
+    padding: 20px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     img.user-img {
@@ -315,6 +399,55 @@ a.my-navbar-toggler {
 
     .logo-row .logo-img {
         padding: 0px;
+    }
+
+    .contact-page .banner {
+        height: unset;
+    }
+
+    .hire-me {
+        display: unset;
+    }
+
+    .hire-content,
+    .hire-form {
+        width: 100%;
+    }
+
+    .hire-form input.form-control {
+        height: 45px;
+    }
+
+    .social-media {
+        position: fixed;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 9999999;
+        border-top: 1px solid black;
+    }
+
+    .social-media ul {
+        width: 295px;
+        margin: auto;
+        padding: 0;
+    }
+
+    .contact-page .banner-cover {
+        display: unset;
+        align-items: unset;
+        height: unset;
+        position: unset;
+        width: 100%;
+    }
+
+    .social-media li {
+        padding: 2px 15px;
+    }
+
+    .copyright {
+        margin-bottom: 40px;
     }
 }
 
