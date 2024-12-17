@@ -44,3 +44,26 @@ function toggleDropdown(id) {
     // Toggle the current dropdown
     dropdown.classList.toggle('open');
 }
+function submitHireMe() {
+    showMessage("Form has submitted successfully. </br> We will get back to you ASAP.");
+    resetForm("hire-form");
+    return false;
+}
+function submitContactForm() {
+    showMessage("Contact form has submitted successfully. </br> We will get back to you ASAP.");
+    resetForm("contact-form");
+    return false;
+}
+function resetForm(Id) {
+    document.getElementById(Id).reset();
+}
+function showMessage(message) {
+
+    document.getElementById("message-holder").innerHTML = message;
+    document.getElementById('message-block').style.display = 'block';
+    setTimeout(restMessageBox, 3000)
+}
+function restMessageBox() {
+    document.getElementById("message-holder").innerHTML = ""
+    document.getElementById('message-block').style.display = 'none';
+}

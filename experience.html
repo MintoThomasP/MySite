@@ -294,10 +294,12 @@
                             <p>Browse hundreds of job offers and find the bestsuitable position.</p>
                         </div>
                         <div class="hire-form">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Email Address">
-                                <span class="input-group-text">Send Message</span>
-                            </div>
+                            <form onsubmit="submitHireMe();event.preventDefault();" id="hire-form">
+                                <div class="input-group">
+                                    <input type="email" required class="form-control" placeholder="Email Address">
+                                    <button type="submit" class="input-group-text">Send Message</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
