@@ -588,7 +588,7 @@ a.my-navbar-toggler {
 
 .portfolio .content-block img {
     width: 100%;
-    margin: 10px;
+    margin: 10px 0px;
     padding: 10px;
     border: 1px solid #dbdbdb;
     border-radius: 5px;
