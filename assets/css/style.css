@@ -21,10 +21,10 @@ nav {
     border-bottom: 1px solid black;
 }
 
-.my-navbar::after,
+/* .my-navbar::after,
 .my-navbar::before {
     content: "";
-    /* background: linear-gradient(to bottom, #bcbcbc, black); */
+    background: linear-gradient(to bottom, #bcbcbc, black);
     width: 50%;
     position: absolute;
     height: 40px;
@@ -38,7 +38,7 @@ nav {
 .my-navbar::before {
     border-bottom-left-radius: 50%;
     left: 0;
-}
+} */
 
 div#collapsibleNavbar {
     position: absolute;
