@@ -580,6 +580,36 @@ a.my-navbar-toggler {
 
 }
 
+.portfolio .heading h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.portfolio .content-block img {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    box-shadow: 0 0 20px -10px black;
+    filter: grayscale(1);
+}
+
+.portfolio .content-block img:hover {
+    filter: unset;
+}
+
+.portfolio .content-block {
+    text-align: center;
+}
+
+/* .portfolio .user-img {
+    width: 100%;
+    filter: grayscale(1);
+
+} */
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     img.user-img {
