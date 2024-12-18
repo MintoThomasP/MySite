@@ -101,7 +101,9 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="Phone">Phone:</label>
-                                        <input type="text" class="form-control" id="Phone" required>
+                                        <input type="text" class="form-control"
+                                            pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$" id="Phone"
+                                            required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
