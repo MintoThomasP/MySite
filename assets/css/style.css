@@ -533,7 +533,7 @@ a.my-navbar-toggler {
     width: 300px !important;
     align-items: center;
     border: 1px dashed #007bff;
-    margin: 10px 0;
+    margin: 10px auto;
 }
 
 .education {
@@ -723,6 +723,10 @@ a.my-navbar-toggler {
 
     .milestone-content {
         order: 2;
+    }
+
+    .education {
+        display: unset;
     }
 
 }
